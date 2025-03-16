@@ -13,7 +13,7 @@ class OpenQuestionCardTest {
     @BeforeEach
     @DisplayName("Подготовка тестового объекта")
     void setUp() {
-        card = new OpenQuestionCard("цвет?", "синий");
+        card = new OpenQuestionCard(1L,"цвет?", "синий");
     }
 
     @Test
@@ -27,7 +27,7 @@ class OpenQuestionCardTest {
     @DisplayName("Создание карточки с пустым вопросом — должно выбрасываться исключение")
     void given_emptyQuestion_when_newOpenQuestionCard_then_exceptionThrown() {
         Exception exception = assertThrows(IllegalArgumentException.class, () ->
-                new OpenQuestionCard("", "синий")
+                new OpenQuestionCard(1L,"", "синий")
         );
         assertEquals("question не может быть пустым", exception.getMessage());
     }
@@ -36,7 +36,7 @@ class OpenQuestionCardTest {
     @DisplayName("Создание карточки с пустым ожидаемым ответом — должно выбрасываться исключение")
     void given_emptyExpectedAnswer_when_newOpenQuestionCard_then_exceptionThrown() {
         Exception exception = assertThrows(IllegalArgumentException.class, () ->
-                new OpenQuestionCard("цвет?", "")
+                new OpenQuestionCard(1L,"цвет?", "")
         );
         assertEquals("expectedAnswer не может быть пустым", exception.getMessage());
     }
