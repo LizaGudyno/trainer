@@ -6,8 +6,8 @@ import ru.gudyno.domain.repo.QuestionRepository;
 
 import java.util.*;
 
-@Repository
-class QuestionInMemoryStorage implements QuestionRepository {
+
+public class QuestionInMemoryStorage implements QuestionRepository {
     private final Map<Long, OpenQuestionCard> storage = new HashMap<>();
 
     @Override
