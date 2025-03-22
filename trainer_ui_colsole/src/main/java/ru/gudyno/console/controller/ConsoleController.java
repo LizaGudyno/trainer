@@ -1,4 +1,4 @@
-package ru.gudyno.controller;
+package ru.gudyno.console.controller;
 
 import org.springframework.stereotype.Component;
 import ru.gudyno.domain.model.OpenQuestionCard;

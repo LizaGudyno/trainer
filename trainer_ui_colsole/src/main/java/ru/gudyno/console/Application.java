@@ -1,9 +1,10 @@
-package ru.gudyno;
+package ru.gudyno.console;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.gudyno.config.SpringConfig;
-import ru.gudyno.controller.ConsoleController;
+import ru.gudyno.console.config.SpringConfig;
+import ru.gudyno.console.controller.ConsoleController;
+
 
 public class Application {
     public static void main(String[] args) {
