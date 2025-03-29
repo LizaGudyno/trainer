@@ -1,10 +1,11 @@
 package ru.gudyno.gui.config;
 
+import ru.gudyno.spring.hibernate.config.DbConfig;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
-import ru.gudyno.spring.jdbc.config.DbConfig;
+
 
 @Configuration
 @Import(DbConfig.class)
